@@ -1,0 +1,109 @@
+
+body{
+    font-family: 'Oswald', sans-serif;
+    margin:0px;
+    height: 100%;
+    width: 100%;
+    padding:0px;
+    background: radial-gradient(red -45%, gray);
+}
+
+header{
+    text-align: center;
+    z-index: 10;
+}
+
+.img-container{
+    display: inline-block;
+    position: relative;
+    width: fit-content;
+    height: fit-content;
+    width: 100%;
+    margin-top: -10%;
+    min-width: 930px;
+    min-height: 523.516px;
+}
+
+.main-image{
+    width: 100%;
+    height:100%;
+}
+
+.tooltip{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+}
+
+.marker{
+    width:45px;    
+    filter: brightness(5);
+    position: absolute;
+}
+
+#engine{
+    top: 42%;
+    left: 71%;
+}
+
+
+#wheels{
+    top: 55%;
+    left: 71%;
+}
+
+#brakes{
+    top: 55%;
+    left: 30%;
+}
+
+#body{
+    top: 45%;
+    left: 50%;
+}
+
+#spoiler{
+    top: 35%;
+    left: 19%;
+}
+
+.on-hover{
+    visibility: hidden;
+    margin-left: 5em;
+    margin-top: -10em;
+    max-width: 25em;
+    background: white;
+    box-shadow: 0 0 25px 13px rgba(0,0,0,0.2);
+    border: 7px double black;
+    z-index: 1;
+    transition: visibility 0.1s;
+    margin-right: 3em;
+}
+
+.on-hover img{
+    width:20%
+}
+
+.hover:hover~.on-hover{
+    visibility: visible;
+    animation-duration: 10s;
+}
+
+.on-hover:hover{
+    visibility: visible;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+footer div{
+    font-size: 1em;
+}
+
+footer h4{
+    font-size: 1em;
+}
