@@ -67,6 +67,10 @@ header{
     left: 19%;
 }
 
+.hover{
+    z-index:1;
+}
+
 .on-hover{
     visibility: hidden;
     margin-left: 5em;
